@@ -1,0 +1,56 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(30, 26px);
+  margin: 0px auto;
+}
+
+.cell {
+  width: 25px;
+  height: 25px;
+  background-color: #F0D9B5;
+  border: 0.5px solid #4c3002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.cell.hover-black {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.cell.hover-white {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.black {
+  background-color: black;
+  border-radius: 50%;
+}
+
+.white {
+  background-color: white;
+  border-radius: 50%;
+}
+
+#message {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
